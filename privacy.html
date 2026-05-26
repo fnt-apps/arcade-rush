@@ -1,1 +1,330 @@
-<p>Coming soon...</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arcade Rush — Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #1a1a1a;
+      --muted: #555;
+      --bg: #fafafa;
+      --card: #fff;
+      --accent: #0d1b2a;
+      --link: #1565c0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e8e8e8;
+        --muted: #aaa;
+        --bg: #0d1117;
+        --card: #161b22;
+        --accent: #7cfc00;
+        --link: #58a6ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid color-mix(in srgb, var(--text) 12%, transparent);
+    }
+    h1 {
+      margin: 0 0 0.5rem;
+      font-size: 1.75rem;
+      line-height: 1.25;
+      color: var(--accent);
+    }
+    .meta { color: var(--muted); font-size: 0.9rem; }
+    h2 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.15rem;
+    }
+    h3 {
+      margin: 1.25rem 0 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    p, li { margin: 0.75rem 0; }
+    ul { padding-left: 1.25rem; }
+    a { color: var(--link); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 1rem 0;
+    }
+    th, td {
+      text-align: left;
+      padding: 0.5rem 0.6rem;
+      border-bottom: 1px solid color-mix(in srgb, var(--text) 12%, transparent);
+      vertical-align: top;
+    }
+    th { font-weight: 600; }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid color-mix(in srgb, var(--text) 12%, transparent);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Arcade Rush — Privacy Policy</h1>
+      <p class="meta">
+        Effective date: 25 May 2026 · Data controller: <strong>fnt apps</strong> (“we”, “us”, “our”)
+      </p>
+    </header>
+
+    <p>
+      This Privacy Policy explains how we collect, use, share, and protect information when you use
+      the <strong>Arcade Rush</strong> mobile application (the “<strong>App</strong>”). It should be
+      read together with our <a href="terms.html">Terms and Conditions</a>.
+    </p>
+    <p>
+      We do not require you to create an account to play. Most game progress is stored on your device.
+      We do use third-party services for analytics, product configuration, and in-app purchases on
+      supported platforms.
+    </p>
+
+    <h2>1. Who is responsible for your data</h2>
+    <p>
+      <strong>fnt apps</strong> is the controller of personal data processed through the App, except
+      where a third party acts as an independent controller (for example, your app store or payment
+      provider). For privacy questions, use <strong>Contact Us</strong> in the App when available, or
+      the support channel on the Arcade Rush store listing.
+    </p>
+
+    <h2>2. Information we collect</h2>
+
+    <h3>2.1 Data stored on your device (local)</h3>
+    <p>
+      The App saves gameplay and preferences locally using on-device storage (for example,
+      <code>SharedPreferences</code>). This may include:
+    </p>
+    <ul>
+      <li>scores, high scores, level progress, and per-game saved state;</li>
+      <li>achievements and play counts;</li>
+      <li>hub settings (sound, music, cheat shortcut visibility, debug mode where enabled);</li>
+      <li>which game you last opened;</li>
+      <li>thumbs-up / thumbs-down ratings per game.</li>
+    </ul>
+    <p>
+      This data stays on your device unless you uninstall the App, clear app data, or use in-app reset
+      options. We do not automatically upload this local progress to our own servers.
+    </p>
+
+    <h3>2.2 Information you choose to provide</h3>
+    <p>
+      <strong>Contact Us:</strong> The feedback dialog lets you type a message and optionally an email
+      address. <em>As of the effective date above, submitting the form does not send that content to our
+      servers</em>—it only confirms submission in the App. We may add server-side delivery later; if we
+      do, we will update this policy.
+    </p>
+    <p>
+      <strong>In-app ratings:</strong> Thumbs-up or thumbs-down on a game are stored locally. Selecting
+      thumbs down may open the contact dialog; a related analytics event may record the game id and
+      sentiment (<code>positive</code> / <code>negative</code>) without including your message text.
+    </p>
+
+    <h3>2.3 Analytics and diagnostics (PostHog)</h3>
+    <p>
+      We use <a href="https://posthog.com/privacy" rel="noopener noreferrer">PostHog</a> (US region:
+      <code>us.i.posthog.com</code>) to understand how the App is used, improve games, run experiments,
+      and fix crashes. PostHog may assign or receive a persistent pseudonymous identifier for your
+      installation.
+    </p>
+    <p><strong>Automatic SDK collection</strong> includes, where enabled:</p>
+    <ul>
+      <li>application lifecycle events (foreground / background);</li>
+      <li>navigation / screen views when routes change;</li>
+      <li>session replay (screen recordings);</li>
+      <li>error and crash reports (Flutter, platform, isolate, and native exceptions).</li>
+    </ul>
+    <p>
+      <strong>Session replay:</strong> Replay is enabled with <strong>text and images not masked</strong>.
+      Recordings may show on-screen UI, game state, and anything visible while you use the App. Avoid
+      entering personal information on screen if you do not want it captured in replay.
+    </p>
+    <p><strong>Custom events we send</strong> (examples; not exhaustive) include:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Examples</th>
+          <th>Typical properties</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gameplay</td>
+          <td><code>game_started</code>, <code>level_reached</code>, <code>wave_reached</code>, <code>game_restart</code>, <code>game_reset</code></td>
+          <td><code>game_id</code>, level/wave numbers, flags such as <code>is_new_best</code></td>
+        </tr>
+        <tr>
+          <td>Hub &amp; UI</td>
+          <td>Screen views: <code>game/{id}</code>, <code>hub/drawer</code>, <code>hub/settings</code>, <code>hub/about</code>, <code>hub/contact</code>, <code>game/sheet/{id}</code></td>
+          <td><code>game_id</code> where relevant</td>
+        </tr>
+        <tr>
+          <td>Feedback</td>
+          <td><code>game_feedback_given</code></td>
+          <td><code>game_id</code>, <code>sentiment</code>, <code>action</code></td>
+        </tr>
+        <tr>
+          <td>Paywall</td>
+          <td><code>paywall_impression</code>, <code>paywall_unlock</code>, <code>paywall_close</code>, <code>paywall_restore_purchase</code>, <code>paywall_purchase_completed</code>, legal link taps</td>
+          <td><code>game_id</code>, optional <code>level</code></td>
+        </tr>
+        <tr>
+          <td>Purchases (hub)</td>
+          <td><code>hub_drawer_unlock_tap</code>, <code>hub_drawer_restore_purchase_tap</code></td>
+          <td>—</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      We use internal game ids (for example <code>dino_run</code>, <code>pinball_rush</code>), not
+      display titles, in event properties. Feature-flag lookups used to enable games or paywall
+      behavior are not logged as analytics events.
+    </p>
+
+    <h3>2.4 Purchases (RevenueCat and app stores)</h3>
+    <p>
+      On platforms where in-app purchases are enabled (currently Android; iOS paywall may be disabled
+      in some builds), purchases are handled by <strong>Google Play</strong> or the <strong>Apple App
+      Store</strong> and entitlement state is managed via
+      <a href="https://www.revenuecat.com/privacy" rel="noopener noreferrer">RevenueCat</a>.
+      Those providers may process payment identifiers, purchase history, and device or account
+      information under their own policies. We receive purchase/entitlement status (for example whether
+      the <code>pro_lifetime</code> unlock is active) to unlock content in the App—not your full payment
+      card details.
+    </p>
+
+    <h3>2.5 What we do not collect</h3>
+    <p>
+      Based on the current App design, we do <strong>not</strong> intentionally collect:
+    </p>
+    <ul>
+      <li>precise location, contacts, photos, microphone, or camera data;</li>
+      <li>a mandatory email or username account for gameplay;</li>
+      <li>advertising identifiers for third-party ad networks (the App does not integrate ad SDKs in the current codebase).</li>
+    </ul>
+    <p>
+      Opening legal pages (this policy, terms) in your browser uses your system browser; that is
+      outside the App’s direct control.
+    </p>
+
+    <h2>3. How we use information</h2>
+    <ul>
+      <li>Provide and operate the games, hub, saves, and settings;</li>
+      <li>Process unlock purchases and restore entitlements;</li>
+      <li>Measure usage, funnels, and experiments (including paywall timing and UI tests);</li>
+      <li>Diagnose crashes and improve stability;</li>
+      <li>Remotely enable or disable games and features via feature flags;</li>
+      <li>Comply with law and enforce our Terms.</li>
+    </ul>
+
+    <h2>4. Legal bases (EEA / UK users)</h2>
+    <p>Where GDPR or similar law applies, we rely on:</p>
+    <ul>
+      <li><strong>Contract / service:</strong> running the App, saves, and purchases you request;</li>
+      <li><strong>Legitimate interests:</strong> analytics, replay, error reporting, and product improvement, balanced against your rights—you may object where applicable;</li>
+      <li><strong>Consent:</strong> where required by law or platform rules (for example certain optional communications once backend delivery exists);</li>
+      <li><strong>Legal obligation:</strong> when we must retain or disclose data by law.</li>
+    </ul>
+
+    <h2>5. Sharing and processors</h2>
+    <p>We share data only as needed with:</p>
+    <ul>
+      <li><strong>PostHog, Inc.</strong> — analytics, session replay, feature flags, error tracking (processor);</li>
+      <li><strong>RevenueCat, Inc.</strong> — in-app purchase and subscription management (processor);</li>
+      <li><strong>Google / Apple</strong> — distribution and billing when you buy through their stores;</li>
+      <li><strong>Service providers</strong> — hosting or support tools if we add them later (for example feedback delivery).</li>
+    </ul>
+    <p>
+      We do not sell your personal information. We may disclose information if required by law, to
+      protect rights and safety, or in connection with a merger or asset sale with appropriate safeguards.
+    </p>
+
+    <h2>6. International transfers</h2>
+    <p>
+      PostHog and RevenueCat may process data in the United States and other countries. Where required,
+      we rely on appropriate safeguards (such as Standard Contractual Clauses offered by vendors) for
+      transfers outside your country.
+    </p>
+
+    <h2>7. Retention</h2>
+    <ul>
+      <li><strong>On-device data:</strong> kept until you delete it, reset progress, or uninstall the App.</li>
+      <li><strong>Analytics and replay:</strong> retained according to PostHog project settings and our operational needs, then deleted or aggregated.</li>
+      <li><strong>Purchase records:</strong> retained by stores and RevenueCat as described in their policies.</li>
+    </ul>
+
+    <h2>8. Your rights and choices</h2>
+    <p>
+      Depending on where you live (including the EEA, UK, and California), you may have rights to
+      access, correct, delete, restrict, object to processing, or port your data, and to withdraw
+      consent where processing is consent-based.
+    </p>
+    <ul>
+      <li><strong>Local data:</strong> use in-app reset options or uninstall the App to remove on-device progress.</li>
+      <li><strong>Analytics:</strong> contact us to request assistance regarding PostHog-held data; you may also limit ad tracking or analytics at the OS level where available.</li>
+      <li><strong>Purchases:</strong> manage subscriptions and payment history in your Google Play or Apple account settings; use <strong>Restore purchases</strong> in the App.</li>
+      <li><strong>Complaints:</strong> EEA users may lodge a complaint with their local supervisory authority (in Italy, the Garante per la protezione dei dati personali).</li>
+    </ul>
+
+    <h2>9. Children</h2>
+    <p>
+      The App is a casual arcade collection not directed at children under 13 (or the minimum age in
+      your country). We do not knowingly collect personal information from children. If you believe a
+      child provided personal data, contact us and we will take appropriate steps to delete it where
+      required.
+    </p>
+
+    <h2>10. Security</h2>
+    <p>
+      We use reasonable technical and organizational measures appropriate to the data we process.
+      No method of transmission or storage is completely secure; use the App on devices you trust and
+      keep your operating system updated.
+    </p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. The effective date at the top will change
+      when we do. Material changes will be posted on this page. Continued use after changes take effect
+      means you accept the updated policy, unless applicable law requires otherwise.
+    </p>
+
+    <h2>12. Contact</h2>
+    <p>
+      For privacy requests or questions, use <strong>Contact Us</strong> in the App when available, or
+      the support channel on the Arcade Rush app store listing.
+    </p>
+
+    <footer>
+      <p>
+        <a href="terms.html">Terms and Conditions</a> ·
+        Arcade Rush © fnt apps
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
